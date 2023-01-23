@@ -1,0 +1,52 @@
+.about {
+  width: 100%;
+  padding: 0% 4%;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  .heading {
+    margin: 1.5rem auto;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--black);
+    span {
+      color: var(--orenge);
+    }
+  }
+  .container {
+    display: flex;
+    column-gap: 1.4rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .imgContainer {
+      flex: 1 1 20rem;
+      img {
+        width: 100%;
+      }
+    }
+    .textContainer {
+      flex: 1 1 20rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.8rem;
+      .heading2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .text {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+      .btn {
+        cursor: pointer;
+        background-color: var(--orenge);
+        width: fit-content;
+        color: var(--white);
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.2rem 0.4rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

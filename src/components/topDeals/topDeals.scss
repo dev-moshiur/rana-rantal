@@ -1,0 +1,22 @@
+.topDeals {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0rem 4%;
+  .header {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1.5rem auto;
+    span {
+      color: var(--orenge);
+    }
+  }
+  .itemContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    column-gap: 1.8rem;
+    row-gap: 1.8rem;
+  }
+}

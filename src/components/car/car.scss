@@ -1,0 +1,46 @@
+.car {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  .imgContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+    }
+  }
+  .textContainer {
+    width: 100%;
+    color: var(--black);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    .name {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .rate {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .view {
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 500;
+      background: var(--orenge);
+      color: var(--white);
+      cursor: pointer;
+      padding: 0.2rem 0.7rem;
+      border-radius: 0.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

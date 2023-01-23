@@ -1,0 +1,57 @@
+.Togglenav {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 10rem;
+  z-index: 6;
+  width: 100%;
+  background-color: white;
+  height: 0rem;
+  transition: 0.5s;
+  color: var(--black);
+
+  &.active {
+    height: 22rem;
+  }
+  .wrapper {
+    width: 100%;
+    height: fit-content;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+
+    overflow: scroll;
+    .menuItem {
+      width: 100%;
+      display: flex;
+
+      flex-direction: column;
+      .menuItemHead {
+        width: 100%;
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem 4%;
+        border: 1px solid #f2f3f4;
+      }
+      .nested {
+        height: 0;
+        transition: 0.6s;
+        overflow: hidden;
+        &.active {
+          height: fit-content;
+        }
+
+        ul {
+          list-style: none;
+          li {
+            padding: 0% 4%;
+            padding: 0.4rem 4%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
